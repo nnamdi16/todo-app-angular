@@ -1,35 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { Todo } from 'src/app/models/Todo';
+import { TodoService } from './../../services/todo.service';
 
 @Component({
   selector: 'app-todos',
   templateUrl: './todos.component.html',
-  styleUrls: ['./todos.component.css']
+  styleUrls: ['./todos.component.css'],
 })
 export class TodosComponent implements OnInit {
-  todos:Todo[];
-  constructor() { }
+  todos: Todo[];
+  constructor(private todoService: TodoService) {}
 
   ngOnInit(): void {
-    this.todos = [
-      {
-        id: 1,
-        title:'Todo One',
-        completed:false
-      },
-
-      {
-        id: 2,
-        title:'Todo Two',
-        completed:false
-      },
-
-      {
-        id: 3,
-        title:'Todo Three',
-        completed:false
-      }
-    ]
+    this.todoService.getTodos().subscribe(todos => {
+      this.todos = todos;
+    });
   }
-
 }
