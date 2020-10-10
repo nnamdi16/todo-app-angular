@@ -7,10 +7,6 @@ import { Hero } from 'src/app/models/Hero';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  hero: Hero = {
-    id: 1,
-    name: 'Windstorm'
-  }
   constructor() { }
 
   ngOnInit(): void {
