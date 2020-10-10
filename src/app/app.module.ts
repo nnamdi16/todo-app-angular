@@ -10,11 +10,12 @@ import { CoursesService } from './components/course/courses.service';
 import { HomeComponent } from './components/home/home.component';
 import { TodosComponent } from './components/todos/todos.component';
 import { TodoItemsComponent } from './components/todo-items/todo-items.component';
+import { HeroComponent } from './components/hero/hero.component';
 
 
 
 @NgModule({
-  declarations: [AppComponent, CourseComponent, HomeComponent, AboutComponent, TodosComponent, TodoItemsComponent],
+  declarations: [AppComponent, CourseComponent, HomeComponent, AboutComponent, TodosComponent, TodoItemsComponent, HeroComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
