@@ -31,3 +31,23 @@
   background-color: #bbd8dc;
   color: white;
 }
+
+.heroes .badge {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.4rem 0.7rem 0 0.7rem;
+  background-color: #405061;
+  line-height: 0.9rem;
+  position: relative;
+  left: -5px;
+  top: -4px;
+  height: 1.5rem;
+  margin-right: 0.8rem;
+  border-radius: 4px 0 0 4px;
+}
+
+.heroes .text {
+  position: relative;
+  bottom: 0.3rem;
+}
