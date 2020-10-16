@@ -11,6 +11,7 @@ import { HomeComponent } from './components/home/home.component';
 import { TodosComponent } from './components/todos/todos.component';
 import { TodoItemsComponent } from './components/todo-items/todo-items.component';
 import { HeroComponent } from './components/hero/hero.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -21,6 +22,7 @@ import { HeroComponent } from './components/hero/hero.component';
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    FormsModule
   ],
   providers: [CoursesService],
   bootstrap: [AppComponent],
