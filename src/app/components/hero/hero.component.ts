@@ -1,5 +1,5 @@
+import { HeroService } from './../../services/hero.service';
 import { Component, OnInit } from '@angular/core';
-import { HEROES } from './../../data/mock-heroes';
 import { Hero } from './../../models/Hero';
 
 
@@ -19,6 +19,8 @@ export class HeroComponent implements OnInit {
   constructor(private heroService:HeroService) { }
 
   ngOnInit(): void {
+    //getHeroes() inside the ngOnInit lifecycle hook
+    this.getHeroes();
     console.log(this.heroes);
 
   }
