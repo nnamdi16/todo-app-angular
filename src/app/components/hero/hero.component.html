@@ -14,16 +14,8 @@
                 <span class="badge">{{hero.id}}</span> <span class="text">{{hero.name}}</span>
             </li>
         </ul>
+
+        <app-hero-detail [hero] = "selectedHero"></app-hero-detail>
   
-    <div *ngIf="selectedHero">
-        <h2>{{selectedHero.name | uppercase}} Details</h2>
-        <div><span>id: </span>{{selectedHero.id}}</div>
-        <div>
-            <label for="selectedHero">name:
-                <input type="text" [(ngModel)]="selectedHero.name" placeholder="name" name="selectedHero"/>
-            </label>
-            
-        </div>
-    </div>
    
 </div>
