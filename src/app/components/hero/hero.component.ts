@@ -10,7 +10,7 @@ import { Hero } from './../../models/Hero';
 })
 export class HeroComponent implements OnInit {
   selectedHero: Hero;
-  heroes = HEROES;
+  heroes:Hero[];
   heros: Hero = {
     id: 1,
     name: 'Windstorm'
