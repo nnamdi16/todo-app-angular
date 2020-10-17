@@ -15,7 +15,8 @@ export class HeroComponent implements OnInit {
     id: 1,
     name: 'Windstorm'
   }
-  constructor() { }
+  //Add a private heroService parameter of type HeroService to the constructor.
+  constructor(private heroService:HeroService) { }
 
   ngOnInit(): void {
     console.log(this.heroes);
