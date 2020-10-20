@@ -1,3 +1,4 @@
+import { MessageService } from './../../services/message.service';
 import { HeroService } from './../../services/hero.service';
 import { Component, OnInit } from '@angular/core';
 import { Hero } from './../../models/Hero';
@@ -16,7 +17,7 @@ export class HeroComponent implements OnInit {
     name: 'Windstorm'
   }
   //Add a private heroService parameter of type HeroService to the constructor.
-  constructor(private heroService:HeroService) { }
+  constructor(private heroService:HeroService, private messageService: MessageService) { }
 
   ngOnInit(): void {
     //getHeroes() inside the ngOnInit lifecycle hook
@@ -27,6 +28,7 @@ export class HeroComponent implements OnInit {
 
   onSelect(hero:Hero){
     this.selectedHero = hero;
+    this.messageService.add(`HeroesComponent: Selected hero id=${hero.id}`)
   }
 
   getHeroes():void {
