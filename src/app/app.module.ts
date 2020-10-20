@@ -13,12 +13,13 @@ import { TodoItemsComponent } from './components/todo-items/todo-items.component
 import { HeroComponent } from './components/hero/hero.component';
 import { FormsModule } from '@angular/forms';
 import { HeroDetailComponent } from './components/hero-detail/hero-detail.component';
+import { MessageComponent } from './components/message/message.component';
 
 
 
 
 @NgModule({
-  declarations: [AppComponent, CourseComponent, HomeComponent, AboutComponent, TodosComponent, TodoItemsComponent, HeroComponent, HeroDetailComponent],
+  declarations: [AppComponent, CourseComponent, HomeComponent, AboutComponent, TodosComponent, TodoItemsComponent, HeroComponent, HeroDetailComponent, MessageComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
