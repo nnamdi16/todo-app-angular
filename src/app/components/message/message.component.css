@@ -25,7 +25,6 @@ button.clear {
   cursor: hand;
   width: 10rem;
   height: 2rem;
-  margin-left: 0.8rem;
 }
 
 button:hover {
@@ -41,4 +40,8 @@ button:disabled {
 button.clear {
   color: #333;
   margin-bottom: 12px;
+}
+
+.message {
+  margin-left: 2rem;
 }
