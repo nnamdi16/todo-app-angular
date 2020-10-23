@@ -55,6 +55,7 @@ h4 {
 
 .grid-pad {
     padding: 0.625rem 0;
+    margin-left: 2rem;
 }
 
 .grid-pad > [class*='col-']:last-of-type {
