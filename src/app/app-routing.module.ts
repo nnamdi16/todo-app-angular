@@ -1,3 +1,4 @@
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
@@ -9,7 +10,9 @@ const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
-  {path: 'heroes', component:HeroComponent}
+  {path: 'heroes', component:HeroComponent},
+  {path: 'dashboard', component:DashboardComponent},
+  {path:'', redirectTo:'/dashboard', pathMatch:'full'}
 ];
 
 @NgModule({
