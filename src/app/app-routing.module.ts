@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './components/about/about.component';
 import { HomeComponent } from './components/home/home.component';
+import { HeroDetailComponent } from './components/hero-detail/hero-detail.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -12,7 +13,8 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
   {path: 'heroes', component:HeroComponent},
   {path: 'dashboard', component:DashboardComponent},
-  {path:'', redirectTo:'/dashboard', pathMatch:'full'}
+  {path:'', redirectTo:'/dashboard', pathMatch:'full'},
+  {path:'detail/:id', component:HeroDetailComponent}
 ];
 
 @NgModule({
