@@ -10,7 +10,7 @@ import { MessageService } from './../../services/message.service';
   styleUrls: ['./hero.component.css']
 })
 export class HeroComponent implements OnInit {
-  selectedHero: Hero;
+  // selectedHero: Hero;
   heroes:Hero[];
   heros: Hero = {
     id: 1,
@@ -26,10 +26,10 @@ export class HeroComponent implements OnInit {
 
   }
 
-  onSelect(hero:Hero){
-    this.selectedHero = hero;
-    this.messageService.add(`HeroesComponent: Selected hero id=${hero.id}`)
-  }
+  // onSelect(hero:Hero){
+  //   this.selectedHero = hero;
+  //   this.messageService.add(`HeroesComponent: Selected hero id=${hero.id}`)
+  // }
 
   getHeroes():void {
      this.heroService.getHeroes().subscribe(heroes =>this.heroes=heroes);
